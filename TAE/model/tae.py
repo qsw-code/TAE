@@ -48,12 +48,6 @@ class TopicAttention(nn.Module):
         attention = self.v(energy)
 
         r = F.softmax(attention, dim=1)
-        
-        #case study
-        r_ = r.squeeze()
-        _,indexs = torch.topk(r_,10)
-
-
 
         out = r*last_dec_hidden
         out = torch.sum(out,1)
