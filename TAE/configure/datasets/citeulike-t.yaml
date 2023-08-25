@@ -1,0 +1,22 @@
+name: citeulike-t
+
+train:
+  texts: ../data/citeulike-t/train_raw_texts.npy
+  labels: ../data/citeulike-t/train_labels.npy
+
+valid:
+  size: 200
+
+test:
+  texts: ../data/citeulike-t/test_raw_texts.npy
+
+embedding:
+  emb_init: ../data/citeulike-t/emb_init.npy
+
+output:
+  res: ../data/citeulike-t/results
+
+labels_binarizer: ../data/citeulike-t/labels_binarizer
+
+model:
+  emb_size: 300

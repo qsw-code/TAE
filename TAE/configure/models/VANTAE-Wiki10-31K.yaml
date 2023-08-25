@@ -1,0 +1,17 @@
+name: VANTAE
+
+model:
+  emb_trainable: False
+
+train:
+  batch_size: 40
+  nb_epoch: 30
+  swa_warmup: 10
+
+valid:
+  batch_size: 40
+
+predict:
+  batch_size: 40
+
+path: /data/Wiki10-31K/models
